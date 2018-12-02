@@ -84,6 +84,7 @@ public class App {
 		         UserHandler userhandler = new UserHandler();
 		         saxParser.parse(inputFile, userhandler);     
 		      } catch (Exception e) {
+		    	  System.out.println("FAILED");
 		         e.printStackTrace();
 		      }
         	
