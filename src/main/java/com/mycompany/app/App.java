@@ -19,18 +19,17 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 
-
+public class App {
+	static ArrayList<String> parseList = new ArrayList<>();
 	
-	
-	public class App extends DefaultHandler {
-		static ArrayList<String> parseList = new ArrayList<>();
-		   public String name="";
-		   public String surname="";
-		   public String id="";
-		   public String res="";
-		   public boolean readFirstName = false;
-		   public boolean readLastName = false;
-		   public boolean readName = false;
+	static class UserHandler extends DefaultHandler {
+		   String name="";
+		   String surname="";
+		   String id="";
+		   String res="";
+		   boolean readFirstName = false;
+		   boolean readLastName = false;
+		   boolean readName = false;
 		   
 
 		   @Override
@@ -64,7 +63,7 @@ import org.xml.sax.helpers.DefaultHandler;
 		         readLastName = false;
 		      }
 		   }
-		
+		}
    
 
     public static void main(String[] args) {
