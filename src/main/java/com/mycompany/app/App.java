@@ -45,9 +45,8 @@ public class App {
 		    	  		readFirstName = true;
 		      } else if (qName.equalsIgnoreCase("LASTNAME")) {
 		    	  		readLastName = true;
-		      
-		    
-		   }
+		      }
+		   }   
 
 		   @Override
 		   public void characters(char ch[], int start, int length) throws SAXException {
@@ -66,7 +65,7 @@ public class App {
 		   }
 		}
 		   
-	}
+	
     public static boolean search(ArrayList<Integer> array, int e) {
         System.out.println("inside search");
         if (array == null)
