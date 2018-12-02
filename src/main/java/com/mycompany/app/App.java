@@ -20,9 +20,9 @@ import org.xml.sax.helpers.DefaultHandler;
 
 
 public class App {
-	ArrayList<String> parseList = new ArrayList<>();
-	ArrayList<String> searchList = new ArrayList<>();
-	class UserHandler extends DefaultHandler {
+	static ArrayList<String> parseList = new ArrayList<>();
+	
+	static class UserHandler extends DefaultHandler {
 		   String name="";
 		   String surname="";
 		   String id="";
@@ -64,19 +64,6 @@ public class App {
 		      }
 		   }
 		}
-		   
-	
-    public static boolean search(ArrayList<Integer> array, int e) {
-        System.out.println("inside search");
-        if (array == null)
-            return false;
-
-        for (int elt : array) {
-            if (elt == e)
-                return true;
-        }
-        return false;
-    }
    
 
     public static void main(String[] args) {
