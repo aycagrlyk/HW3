@@ -150,7 +150,7 @@ public class App {
 	public static boolean isDefine(ArrayList<Person> list,Person p){
 		for(int i=0;i<list.size();i++){
 			Person other=list.get(i);
-			if(p.fname.equalsIgnoreCase(other.fname) && p.lname.equalsIgnoreCase(other.lname)){
+			if(p.entityId.equalsIgnoreCase(other.entityId) && p.fname.equalsIgnoreCase(other.fname) && p.lname.equalsIgnoreCase(other.lname)){
 				return true;
 			}
 		}
