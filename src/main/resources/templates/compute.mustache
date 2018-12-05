@@ -1,11 +1,26 @@
-<title>My application deployed automatically</title>
-  <h1>Hello, World!</h1>
-    Result is {{result}}
-
-
-  <form action="compute" method="post">
-        <textarea name="input1" rows="10" cols="30"></textarea>
-        <textarea name="input2" rows="10" cols="30"></textarea>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<title>My Application deployed automatically</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col">
+      <form action="search" method="post">
+        <textarea name="input1" rows="10" cols="30" placeholder="Firstname"></textarea>
+        <textarea name="input2" rows="10" cols="30" placeholder="Lastname"></textarea>
         <br>
-        <input type="submit">
-  </form>
+        <input type="submit" class="btn btn-outline-light btn-lg" value="Search" width="100px;">
+      </form>
+    </div>
+    <div class="col" style="border:1px solid lightgray;border-radius10px;">
+      <p>{{result}}</p>
+    </div>
+  </div>
+  <style>
+    body { background-color: #BB999C; padding: 5%;}
+    textarea {border-radius: 10px;}
+    p {color: #fbfbfb; width:10px;}
+  </style>
+</body>
+</html>
